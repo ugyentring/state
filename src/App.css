@@ -1,42 +1,50 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+button.add:active,
+button.add:focus,
+button.sub:active,
+button.sub:focus {
+  border: none;
+  outline: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 50px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+p {
+  margin-top: 20px;
 }
 
-.card {
-  padding: 2em;
+.add {
+  font-family: "Franklin Gothic Medium";
+  background-color: rgb(18, 161, 42);
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.sub {
+  font-family: "Franklin Gothic Medium";
+  font-size: 20px;
+  background-color: rgb(212, 15, 42);
+  color: white;
+  margin-left: 20px;
+}
+
+.reset {
+  background: #000;
+  color: white;
+  padding: 10px;
 }
